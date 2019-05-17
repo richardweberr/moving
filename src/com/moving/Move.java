@@ -1,9 +1,19 @@
 package com.moving;
 
 public class Move {
-    private final int totalOfBoxes = 34;
-    private final int boxesPerMove = 9;
 
+    // Attributes
+    private int totalOfBoxes;
+    private int boxesPerMove;
+
+
+    //Constructors
+    public Move(int TotalOfBoxes, int BoxesPerMove) {
+        this.totalOfBoxes = TotalOfBoxes;
+        this.boxesPerMove = BoxesPerMove;
+    }
+
+    // Methods
     public void moveBoxes() {
         int numberOfMoves = 0;
         int boxesRemaining = this.totalOfBoxes;
